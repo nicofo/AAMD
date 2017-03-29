@@ -1,0 +1,39 @@
+#
+#	Funció que extreu una llista de quantitats bàsiques
+#	d'un objecte L de la classe lm
+#
+# --------------------------------------------------------------------
+Quantitats.Regressio<-function(L){
+	y<-L$model[[1]]
+	y0<-y-mean(y)
+	TotalSS0<-sum(y0^2)
+	n<-length(y)
+	Totaldf<-n
+	Totaldf0<-Totaldf-1
+#
+	yhat<-as.numeric(L$fitted.values)
+	yhat0<-yhat-mean(yhat)
+	RegSS0<-sum(yhat0^2)
+	Regdf<-L$rank
+	Regdf0<-Regdf-1
+#
+	ytilde<-as.numeric(L$residuals)
+	ResSS<-sum(ytilde^2)
+	Resdf<-Totaldf0-Regdf0
+#
+	TotalMeanS0<-TotalSS0/Totaldf0
+	RegMeanS0<-RegSS0/Regdf0
+	ResMeanS<-ResSS/Resdf
+#
+	R2<-RegSS0/TotalSS0
+	RegF<-RegMeanS0/ResMeanS
+	AIC=n*log(ResSS/n)+2*Regdf
+#
+	Q<-list(
+		y=y,y0=y0,n=n,TotalSS0=TotalSS0,Totaldf=Totaldf,Totaldf0=Totaldf0,
+		yhat=yhat,yhat0=yhat0,RegSS0=RegSS0,Regdf=Regdf,Regdf0=Regdf0,
+		ytilde=ytilde,ResSS=ResSS,Resdf=Resdf,
+		TotalMeanS0=TotalMeanS0,RegMeanS0=RegMeanS0,ResMeanS=ResMeanS,
+		R2=R2,RegF=RegF,AIC=AIC)
+	return(Q)
+	}
