@@ -1,0 +1,21 @@
+"Name" 			"Body Temperature" 	"Skin Cover" 	"Gives Birth" 	"Aquatic"	"Aerial"	"Has Legs" "Hibernates" "Class Label"
+"human"			warm 				hair 			yes 			no 			no 			yes 		no 			mammal
+"python"		cold 				scales 			no 				no 			no 			no 			yes 		reptile
+"salmon"		cold 				scales 			no 				yes 		no 			no 			no 			fish
+"whale"			warm 				hair 			yes 			yes 		no 			no 			no 			mammal
+"frog"			cold 				none 			no 				semi 		no 			yes 		yes 		amphibian
+"komodo dragon"	cold 				scales 			no 				no 			no 			yes 		no 			reptile
+"bat" 			warm 				hair 			yes 			no			yes 		yes 		yes 		mammal
+"pigeon"		warm				feathers		no				no			yes			yes			no			bird
+"cat"			warm				fur				yes				no			no			yes			no			mammal
+"leopard shark"	cold 				scales			yes				yes			no			no			no			fish
+"turtle"		cold				scales			no				semi		no			yes			no			reptile
+"penguin"		warm				feathers		no				semi		no			yes			no			bird
+"porcupine"		warm				quills			yes				no			no			yes			yes			mammal
+"eel"			cold				scales			no				yes			no			no			no			fish
+"salamander"	cold 				none 			no				semi		no			yes			yes			amphibian
+"gila monster"	cold				scales 			no				no			no			yes			yes			reptile
+"platypus"		warm				fur				no				semi		no			no			no			mammals
+"owl"			warm				feathers		no				no			yes			yes			no			bird
+"dolphin"		warm				none			yes				yes			no			no			no			mammal
+"eagle"			warm				feathers		no				no			yes			yes			no			bird
